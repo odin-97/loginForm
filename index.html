@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <div class="hero-container">
@@ -20,10 +22,52 @@
             </div>
         </div>
         <div class="sign-up-container">
-            <div class="info-text"></div>
-            <div class="login-form"></div>
-            <div class="account-section"></div>
+            <div class="info-text">
+                <p>This is not a real online service! You know you need something like this in your life
+                    to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                </p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="login-form">
+                <p>Let's do this!</p>
+                <form action="https://example.com/" id="odin-form">
+                    <div class="left-form-page">
+                        <div class="fName">
+                            <label for="fName">FIRST NAME</label>
+                            <input type="text" name="fName" id="fName" required>
+                        </div>
+                        <div class="email">
+                            <label for="email">E-MAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="password">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                    </div>
+
+                    <div class="right-form-page">
+                        <div class="lName">
+                            <label for="lName">LAST NAME</label>
+                            <input type="text" name="lName" id="lName" required>
+                        </div>
+                        <div class="phone">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                        <div class="cfPassword">
+                            <label for="cfPassword">CONFIRM PASSWORD</label>
+                            <input type="password" name="cfPassword" id="cfPassword" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="account-section">
+                <button type="submit" form="odin-form">Create Account</button>
+                <p>Already have an account? <span class="login-link">Log in</span></p>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
