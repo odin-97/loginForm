@@ -34,13 +34,50 @@ img {
     background-image: url(images/background_odin.avif);
     background-repeat: no-repeat;
     background-size: contain;
-    border: 2px solid red;
+    position: relative;
 }
+
+.hero-banner {
+    height: 200px;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.6);
+    position: absolute;
+    top: 300px;
+    display: flex;
+}
+
+.logo-img-container,
+.logo-text-container {
+    flex: 1;
+}
+
+.logo-img-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo-text-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'norse-bold';
+    src: url(fonts/Norse-Bold.otf);
+}
+
+.logo-text-container p {
+    font-family: 'norse-bold', sans-serif;
+    font-size: calc(200px * 0.7);
+    font-weight: 900;
+    color: whitesmoke;
+}
+
 
 .sign-up-container {
     height: 100%;
     flex: 1;
-    border: 2px solid lime;
     display: flex;
     flex-direction: column;
 }
