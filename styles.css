@@ -24,7 +24,21 @@ img {
 /* #endregion CSS Normalize */
 
 .container {
-    height: 20vh;
-    width: 20vh;
-    background-color: blueviolet;
+    height: 100vh;
+    display: flex;
+}
+
+.hero-container {
+    height: 100%;
+    aspect-ratio: 0.667;
+    background-image: url(images/background_odin.avif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid red;
+}
+
+.sign-up-container {
+    height: 100%;
+    flex: 1;
+    border: 2px solid lime;
 }
